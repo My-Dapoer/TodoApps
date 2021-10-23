@@ -69,7 +69,7 @@ class EditTodoActivity : AppCompatActivity() {
                 State.ERROR -> {
                     binding.progress.toGone()
                     toastError(it.message!!)
-                    Log.d("TAG", "getTodo: ERROR ")
+                    logs("ERROR")
                 }
             }
         })
